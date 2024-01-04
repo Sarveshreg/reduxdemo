@@ -1,13 +1,16 @@
 import { useState } from 'react'
-import Counter from './features/counter/Counter.jsx'
+
 import './App.css'
+import PostsList from './features/posts/postsList'
+import AddPostForm from './features/posts/AddPostForm'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Counter/>
+    <AddPostForm/>
+      <PostsList/>
     </>
   )
 }
